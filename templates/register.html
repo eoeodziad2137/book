@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheets/style.css')}}">
+
+</head>
+
+<body>
+    <div class="login_div">
+        <h3>Enter your register creditenitals</h3>
+        <form method="POST" action="/register">
+            <label for=" first">
+                Username:
+            </label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username">
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="login_sumbit">
+                <button type="submit" value="Register">
+                    Submit
+                </button>
+            </div>
+
+            <p>Already registered?
+                <a href="/login" style="text-decoration: none;">
+                    Log in
+                </a>
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>
