@@ -1,3 +1,14 @@
 .toolbar1{
-    
+    display: block;
+    float: left;
+    background-color: #4CAF50;
+    padding: 50px;
+}
+
+a{
+    padding: 20px;
+}
+
+.search-container{
+    padding: 50px;
 }
