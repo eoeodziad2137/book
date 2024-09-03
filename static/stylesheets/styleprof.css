@@ -1,9 +1,29 @@
-.topnav a {
-    float: left;
+*{box-sizing: border-box;}
+body{
+    margin: 0;
+}
+
+.nav1{
+    padding: 10px;
+    background-color: #4CAF50; 
+    float: none;
+}
+
+.nav1 a{
     display: block;
+    float: left;
     color: black;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-  }
+}
+.search-container{
+    float: right;
+}
+
+a{
+    padding: 10px;
+    background-color: pink;
+}
+
+a:hover{
+    color: black
+}
