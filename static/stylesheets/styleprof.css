@@ -1,14 +1,9 @@
-.toolbar1{
-    display: block;
+.topnav a {
     float: left;
-    background-color: #4CAF50;
-    padding: 50px;
-}
-
-a{
-    padding: 20px;
-}
-
-.search-container{
-    padding: 50px;
-}
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
