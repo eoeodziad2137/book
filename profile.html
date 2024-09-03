@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="static/stylesheets/styleprof.css">-->
+    <title>NiggaBook</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .div1{
+            background-color: #4CAF50;
+            color: aliceblue;
+            overflow: hidden;
+        }
+
+        .div1 a {
+            display: block;
+            float: left;
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        .search-container {
+            float: right;
+        }
+
+        a {
+            padding: 15px;
+
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.281);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+
+        <a class="home" href="#home">Home</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <a class="friends"href="#about">Friends</a>
+        <a class="settings"href="#contact">Settings</a>
+        <!--<left>, searchbar, home button, <right>  friends button settings,  -->
+    </div>
+
+    <div class="profile_header">
+        <div class="banner">
+
+        </div>
+        <div class="profilepic">
+            <!--profile pic should be split beetwen banner and empty spece of empty div or toolbar -->
+        </div>
+        <div class="empty">
+
+        </div>
+        <div class="toolbar2">
+
+        </div>
+    </div>
+
+    <div class="biogram">
+        <!--should be placed on the left side of site-->
+
+
+        <!--where someone lives -->
+        <!--where someone comes from-->
+        <!--relationship status-->
+        <!--alma mater-->
+        <!--highschool, primary school -->
+        <!--etc-->
+    </div>
+
+    <div class="activitycreator">
+        <!--add a post, story, start a live etc-->
+    </div>
+
+    <div class="postfilter">
+        <!--user can change view of the picturets that has been published, from the list to the gallery view (vice versa) -->
+    </div>
+
+</body>
+
+</html>
