@@ -16,7 +16,7 @@ mysql = MySQL(app)
 @app.route('/')
 def home():
     if  'username' in session:
-        return render_template('home.html', username=session['username'])
+        return render_template('home.html ', username=session['username'])
     else:
         return render_template('home.html')
     

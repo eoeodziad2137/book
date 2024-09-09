@@ -16,7 +16,7 @@
             margin: 0;
         }
 
-        .div1{
+        .div1 {
             background-color: #4CAF50;
             color: aliceblue;
             overflow: hidden;
@@ -27,20 +27,45 @@
             float: left;
             color: black;
             text-decoration: none;
-            padding: 15px;
+            padding: 16px;
+        }
+
+        .div1 .search-container button {
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
         }
 
         .search-container {
+            float: left;
+
+        }
+
+        button {
             float: right;
         }
 
-        a {
-            padding: 15px;
 
+
+        .div1 input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
         }
 
         a:hover {
             background-color: rgba(0, 0, 0, 0.281);
+            color: white;
+        }
+
+        button[type=submit]:hover {
+            background-color: rgba(0, 0, 0, 0.281);
+            ;
             color: white;
         }
     </style>
@@ -56,8 +81,10 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-        <a class="friends"href="#about">Friends</a>
-        <a class="settings"href="#contact">Settings</a>
+
+
+        <a class="friends" href="#friemds">Friends</a>
+        <a class="settings" href="#settings">Settings</a>
         <!--<left>, searchbar, home button, <right>  friends button settings,  -->
     </div>
 
