@@ -4,77 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="static/stylesheets/styleprof.css">-->
-    <title>NiggaBook</title>
+    <link rel="stylesheet" href="profilemainstylestyle.css">
+    <title>Profile - PiwokoPosting</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        .div1 {
-            background-color: #4CAF50;
-            color: aliceblue;
-            overflow: hidden;
-        }
-
-        .div1 a {
-            display: block;
-            float: left;
-            color: black;
-            text-decoration: none;
-            padding: 16px;
-        }
-
-        .div1 .search-container button {
-            padding: 6px 10px;
-            margin-top: 8px;
-            margin-right: 16px;
-            background: #ddd;
-            font-size: 17px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .search-container {
-            float: left;
-
-        }
-
-        button {
-            float: right;
-        }
-
-
-
-        .div1 input[type=text] {
-            padding: 6px;
-            margin-top: 8px;
-            font-size: 17px;
-            border: none;
-        }
-
-        a:hover {
-            background-color: rgba(0, 0, 0, 0.281);
-            color: white;
-        }
-
-        button[type=submit]:hover {
-            background-color: rgba(0, 0, 0, 0.281);
-            ;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
     <div class="div1">
 
-        <a class="home" href="#home">Home</a>
+        <div class="div2">
+
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+
+            </ul>
+        </div>
+
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search">
@@ -82,21 +27,24 @@
             </form>
         </div>
 
+        <div class="div3">
 
-        <a class="friends" href="#friemds">Friends</a>
-        <a class="settings" href="#settings">Settings</a>
+            <ul class="right">
+                <li><a href="#under_development">Notifications</a></li>
+                <li><a href="#under_development">Friends</a></li>
+                <li><a href="#under_development">Settings</a></li>
+            </ul>
+        </div>
         <!--<left>, searchbar, home button, <right>  friends button settings,  -->
     </div>
 
     <div class="profile_header">
         <div class="banner">
-
+            <img src="https://img.redro.pl/fototapety/ladny-wiosennych-kwiatow-poziomy-baner-400-146282234.jpg" alt="zdjecie">
         </div>
         <div class="profilepic">
+            <img src="" alt="profilepic">
             <!--profile pic should be split beetwen banner and empty spece of empty div or toolbar -->
-        </div>
-        <div class="empty">
-
         </div>
         <div class="toolbar2">
 
