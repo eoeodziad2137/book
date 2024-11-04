@@ -7,8 +7,8 @@ app.secret_key ='secretkey'
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'testdb'
+app.config['MYSQL_PASSWORD'] = 'Mam10lat v'
+app.config['MYSQL_DB'] = 'users'
 
 mysql = MySQL(app)
 
@@ -19,8 +19,14 @@ def home():
         return render_template('home.html ', username=session['username'])
     else:
         return render_template('home.html')
+
     
-    
+#@app.route('/')
+#def home():
+ #   if  'username' in session:
+  #      return render_template('profile.html ', username=session['username'])
+   # else:
+     #   return render_template('login.html')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -31,7 +37,7 @@ def login():
         user = cur.fetchone()
         cur.close()
         
-        if user and password == user[1]:
+        if user and password == user[1]:    
             session['username'] = user[0]
             return redirect(url_for('home'))
         else:
@@ -55,6 +61,8 @@ def register():
 
     return render_template('register.html')
         
+
+
 @app.route('/logout')
 def logout():
     session.pop('username', None)
